@@ -1,7 +1,8 @@
-var Engine = Matter.Engine,
-  World = Matter.World,
-  Events = Matter.Events,
-  Bodies = Matter.Bodies;
+const Engine = Matter.Engine;
+const World = Matter.World;
+const Bodies = Matter.Bodies;
+const Body = Matter.Body;
+const Constraint=Matter.Constraint;
  
 var engine,world;
    
@@ -57,17 +58,17 @@ function draw() {
   text("You have 5 chances to increase your score",200,20);
   fill("white")
 
-  textSize(23);
-  text("500",10,550);
-  text("500",85,550);
-  text("500",165,550);
-  text("500",245,550);
-  text("200",325,550);
-  text("200",405,550);
-  text("200",485,550);
-  text("100",565,550);
-  text("100",645,550);
-  text("100",725,550);
+  textSize(25);
+  text("500",17,550);
+  text("500",97,550);
+  text("500",177,550);
+  text("500",257,550);
+  text("200",337,550);
+  text("200",417,550);
+  text("200",497,550);
+  text("100",577,550);
+  text("100",657,550);
+  text("100",737,550);
   Engine.update(engine);
   ground.display();
 
