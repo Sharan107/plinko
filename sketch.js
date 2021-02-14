@@ -58,7 +58,7 @@ function draw() {
   fill("white")
 
   textSize(23);
-  text("500",5,550);
+  text("500",8,550);
   text("500",80,550);
   text("500",160,550);
   text("500",240,550);
