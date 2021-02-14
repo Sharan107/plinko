@@ -81,7 +81,7 @@ function draw() {
      plinkos[i].display();
      
    }
-   if(particle!==null){
+   if(particle!=null){
      particle.display();
  
   if(particle.body.position.y>760){
@@ -90,7 +90,7 @@ function draw() {
       particle=null;
     if(count>=5)gameState="end";
     }
-    else if(particle.position.x<600 && particle.body.position.x>301){
+    else if(particle.body.position.x<600 && particle.body.position.x>301){
       score=score+200;
       particle=null;
 
